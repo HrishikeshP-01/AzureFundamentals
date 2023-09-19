@@ -203,3 +203,28 @@
 - A type of community cloud tailored for a specific need or regulatory requirement
 - Isolated from standard public Azure cloud
 - Eg: Azure Govt. , Azure German cloud, Azure China cloud
+
+## Azure Arc
+- Allows ppl to manage IT resources across platforms, different clouds, data centers as if they were running in Azure. Therefore for all of them we can easily use Azure management tools.
+- Eg: An on-premises IT service, multi-cloud IT services etc. Edge IT services etc. can be managed via Azure Arc
+- Azure Arc allows for Unified Management
+
+#### Azure Arc can be managed via
+- Azure portal
+- Azure CLI
+- Azure PowerShell – Object Oriented
+- Azure REST API
+
+*Azure Arc can be used to manage external services*
+Eg: Physical/Virtual machines like Windows, Linux, Kubernetes, Microsoft SQL Server
+
+#### Adding to Azure Arc
+- In order for these to show up in Azure arc we need to enable the servers for azure arc.
+- To do this we have to install Azure Connected Machine agent on it.
+- The server is then assigned a resource id, becomes part of a resource group and is assigned a managed identity. Thus making it possible for us to manage it via Azure Arc
+- Server is treated as a std. Azure resource and can have tags applied to it, azure policy can be applied
+- Servers can be monitored using logging tools like Log Analytics workspace
+
+#### Azure arc is used for
+- Centralized compliance
+- Centralized server config management
