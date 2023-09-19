@@ -39,7 +39,7 @@
 - Streamlined to support virtualization hosting.
 - Eg:- VMWare
 
-##### Type 2 hypervisor
+#### Type 2 hypervisor
 - Runs as an app within OS. 
 - Stability & performance of host OS affects VM guests.
 
@@ -82,10 +82,98 @@
 - It’s a specialized cloud with services tailored for specific needs/audience
 - Eg: Azure US Govt., Azure Germany
 
-## Azure Data Centers – 
+## Azure Data Centers
 - All azure cloud services are located here
 - Physical locations are not disclosed in the interest of security
 - There will be one or more within an availability zone (AZ)
 - Designed with redundancy in mind – power failure, network failure, etc.
 - There will be physical security at the location
 
+## IaaS 
+- Underlying infrastructure is provided
+- Data centers
+- Configured by IT sys admins
+- Network, Network security, Storage, Compute etc. are to be deployed by us.
+- Service-level agreement guarantees a certain amount of uptime.
+- CSP & tenant has shared responsibility
+
+- CSP – Hypervisor, network equipment, physical storage, provisioning
+- Tenant – VM deployment, management, VNETs, storage provisioning
+- Eg: - Storage accounts (can store BLOBS, shared folders, can be used to create message cubes), make VMs, make VNets, Azure Firewall – Lets us configure firewall for Azure env.
+
+#### IaaS benefits
+- Less provisioning time than on-premises
+- Accessible from anywhere
+- Shared responsibility
+
+#### Azure IaaS can be managed via
+- GUI management – Azure portal
+- Azure CLI
+- Azure PowerShell
+- Programmatic API calls
+- Templates
+
+## PaaS
+- Underlying infrastructure required to support IT services are provisioned by the CSP
+- It’s a managed service
+- Configuration of PaaS is done by cloud customers
+- Service Level Agreements are provided
+
+- CSP – Infrastructure, VM maintenance, software patching etc.
+- Tenant – Configuration of the solution, data
+- Eg: of PaaS – Azure Active Directory (Azure AD)
+
+#### PaaS benefits
+- Network configs, servers are deployed & managed for us
+- No organizational units (OUs)
+- No group policy
+*(If you need OUs you can deploy AD in a VM so that you can have full AD control)*
+
+##### Azure SQL Database
+- No network config, servers to be managed
+- No DB software to be installed
+- We can directly use it.
+*However, if you want complete SQL database control, deploy them manually as IaaS*
+
+##### Azure Virtual Desktop (AVD)
+- No network config to deploy or manage
+- No client-based VM to deploy or manage
+- We can select a bundle – Hardware + software config
+- We can create customized bundles
+
+#### Azure PaaS can be managed using:
+- GUI management (Azure Portal), Azure CLI, Azure PowerShell, Programmatic API calls
+- SaaS
+- End-user applications. You are paying for the use of the application
+- Limited config options
+- Isolated from other cloud tenants
+- Managed services
+- Software managed by CSP
+- SLAs provided
+
+## SaaS
+
+- CSP – Infrastructure, software maintenance, patching of software, tenant isolation, provisioning user accounts & groups, multi-factor authentication, single sign-on, user permissions
+- Tenant – Application config, usage, data privacy
+
+#### SaaS benefits
+- Accessible from anywhere using any platform
+- Normally no software deployment needed
+- Users are familiar with cloud-based applications, learning curve is small
+- Pay only for what you used
+- Most of the time, it’s accessible using a web browser
+- Eg: - Microsoft 365
+
+#### On premises IT hardware responsibilities
+- Acquisition & shipping
+- Config
+- Ongoing management
+- Firmware updates
+- Decommissioning
+
+#### On-premises IT software responsibilities
+- Acquisition, licensing
+- Configuration
+- Ongoing management, user provisioning
+- Software updates
+- Decommissioning
