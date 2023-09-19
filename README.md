@@ -177,3 +177,29 @@
 - Ongoing management, user provisioning
 - Software updates
 - Decommissioning
+
+## On-premises vs public cloud
+*CapEx (Capital Expenditure)* is high for On-premises
+
+*OpEx (Operational Expenditure)* depends on a lot of variables including time
+
+- Total cost of ownership could be less for public cloud providers
+- CSPs are economies of scale so they can provide their services for a relatively low rate
+- On-premises cloud might not work during natural/man-made disasters
+- Public clouds have resiliency due to IT system duplication & data duplication
+
+## Azure regions
+- We can specify azure region when deploying a resource
+- More than 60 worldwide
+- Service availability vary by region
+- Some configurations require resources to be in the same region. Eg: Key Vault & storage account using customer managed keys
+
+## Azure Availability Zones
+- Contained within an Azure region & each region has at least 1.
+- Each availability zones are linked using high-speed networks
+- Some services can be replicated across availability zones for resiliency
+
+## Azure Sovereign Regions
+- A type of community cloud tailored for a specific need or regulatory requirement
+- Isolated from standard public Azure cloud
+- Eg: Azure Govt. , Azure German cloud, Azure China cloud
