@@ -33,13 +33,13 @@
 
 *SDN* – Allows customers to configure their own cloud networks without connecting to an underlying network infrastructure device. It provides an abstraction layer that allows user to easily configure networks using CLI or GUIs instead of native language of routers & switches.
 
-####Type 1 hypervisor
+#### Type 1 hypervisor
 - Is an OS.
 - Runs directly on hardware. Therefore the name “Bare metal hypervisor”
 - Streamlined to support virtualization hosting.
 - Eg:- VMWare
 
-#####Type 2 hypervisor
+##### Type 2 hypervisor
 - Runs as an app within OS. 
 - Stability & performance of host OS affects VM guests.
 
@@ -52,4 +52,40 @@
 
 **VM Sprawl** – It’s quick & easy to provision VMs in cloud. However, it is also very easy to forget about VMs. VM Sprawl occurs when no: of VMs increase to the extent that admins can no longer control or manage them. This will lead to wasteful consumption of resources, increased costs, loss of performance & even server crash.
 
+## Cloud deployment models
+1. Public clouds – 
+- Available to anyone over the internet
+- Cloud provider owns the IT infrastructure
+- Adhere to strict data security & data center security standards
+- Providers probably will have data centers in multiple locations
+- CSP security accreditations are required so that users will use them.
+- Shared responsibility models – CSP responsible for hardware, Customer responsible for configuration, software install, updates, etc.
+- Data Sovereignty – laws of the location will apply to data
+- Larger target for malicious users
+- Cloud service offerings may vary between geographical regions.
+
+2. Private cloud – 
+- Infrastructure is owned & used by a single organization
+- They have full config control
+- Full responsibility for what happens
+- Metered usage can still be used in internal clouds
+- Also uses virtualization
+
+3. Hybrid cloud –
+- Combination of private & public cloud
+- Owner has full configuration control (private)
+- Also uses virtualization
+- Confidential processes and data might have to remain under a single org. Due to company or country laws.
+
+4. Community clouds – 
+- Adheres to all cloud computing characteristics
+- It’s a specialized cloud with services tailored for specific needs/audience
+- Eg: Azure US Govt., Azure Germany
+
+## Azure Data Centers – 
+- All azure cloud services are located here
+- Physical locations are not disclosed in the interest of security
+- There will be one or more within an availability zone (AZ)
+- Designed with redundancy in mind – power failure, network failure, etc.
+- There will be physical security at the location
 
