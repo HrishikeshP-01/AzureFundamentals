@@ -45,7 +45,7 @@
 
 *Type 1 > Type 2 hypervisor*
 
-####In Azure cloud we have an option of dedicated VM Hosting
+#### In Azure cloud we have an option of dedicated VM Hosting
 - A single cloud customer has access to a hypervisor running on a physical host in a data center. It will not run any other VMs of other customers on it.
 - This is more expensive than shared hosting of VMs.
 - We use it especially when there’s legal/regulatory compliance.
